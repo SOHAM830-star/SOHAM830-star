@@ -58,7 +58,7 @@ learning.exe
 AUTO-SYNC ENABLED — public repositories are discovered automatically.
 
 <!-- PROJECTS:START -->
-
+<p align="center">No public projects found yet. Build something awesome and push it here.</p>
 <!-- PROJECTS:END -->
 
 > github_analytics
