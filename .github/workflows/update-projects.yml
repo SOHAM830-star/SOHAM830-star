@@ -1,0 +1,128 @@
+name: Update GitHub Projects
+
+on:
+  schedule:
+    - cron: "17 */6 * * *"
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+jobs:
+  update-projects:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v5
+
+      - name: Generate project section
+        env:
+          GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+          GH_USERNAME: SOHAM830-star
+        run: |
+          python - <<'PY'
+          import json
+          import os
+          import urllib.request
+          from pathlib import Path
+
+          username = os.environ["GH_USERNAME"]
+          token = os.environ["GH_TOKEN"]
+
+          request = urllib.request.Request(
+              f"https://api.github.com/users/{username}/repos?per_page=100&sort=updated",
+              headers={
+                  "Accept": "application/vnd.github+json",
+                  "Authorization": f"Bearer {token}",
+                  "X-GitHub-Api-Version": "2022-11-28",
+                  "User-Agent": "github-profile-updater",
+              },
+          )
+
+          with urllib.request.urlopen(request) as response:
+              repos = json.load(response)
+
+          repos = [
+              repo for repo in repos
+              if repo["name"].lower() != username.lower()
+              and not repo["fork"]
+              and not repo["archived"]
+              and not repo["private"]
+          ]
+
+          repos.sort(
+              key=lambda repo: repo.get("updated_at", ""),
+              reverse=True
+          )
+
+          cards = []
+
+          for repo in repos[:12]:
+              name = repo["name"]
+              url = repo["html_url"]
+
+              card = (
+                  f'<a href="{url}">'
+                  f'<img src="https://github-readme-stats.vercel.app/api/pin/?'
+                  f'username={username}&repo={name}&'
+                  f'hide_border=true&'
+                  f'bg_color=00000000&'
+                  f'title_color=00F7FF&'
+                  f'text_color=FFFFFF&'
+                  f'icon_color=BF5FFF" '
+                  f'width="400" alt="{name}">'
+                  f'</a>'
+              )
+
+              cards.append(card)
+
+          if cards:
+              project_html = (
+                  '<div align="center">\n\n'
+                  + "\n\n".join(cards)
+                  + '\n\n</div>'
+              )
+          else:
+              project_html = (
+                  '<p align="center">'
+                  'No public projects found yet. '
+                  'Build something awesome and push it here.'
+                  '</p>'
+              )
+
+          readme = Path("README.md")
+          text = readme.read_text(encoding="utf-8")
+
+          start = "<!-- PROJECTS:START -->"
+          end = "<!-- PROJECTS:END -->"
+
+          before = text.split(start, 1)[0]
+          after = text.split(end, 1)[1]
+
+          new_text = (
+              before
+              + start
+              + "\n"
+              + project_html
+              + "\n"
+              + end
+              + after
+          )
+
+          readme.write_text(new_text, encoding="utf-8")
+          PY
+
+      - name: Commit project updates
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+
+          git add README.md
+
+          if git diff --cached --quiet; then
+            echo "No project changes detected."
+          else
+            git commit -m "chore: update project showcase"
+            git push
+          fi
