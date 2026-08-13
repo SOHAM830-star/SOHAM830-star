@@ -2,7 +2,7 @@
 
 ⚡ SOHAM.A.CHAVAN
 
-Computer Engineering Student | Developer
+Computer Science & Engineering Student | Developer
 
 <img src="https://readme-typing-svg.demolab.com?font=Fira+Code&size=21&duration=3000&pause=900&color=00F7FF&center=true&vCenter=true&width=700&lines=Building+ideas+into+working+software.;Learning.+Building.+Breaking.+Fixing.;Welcome+to+my+developer+profile." alt="Typing animation">
 
@@ -12,7 +12,7 @@ Computer Engineering Student | Developer
 
 </div>
 
-> whoami
+> My Info:-
 
 ╔════════════════════════════════════════════════════════════╗
 ║                     SOHAM.A.CHAVAN                         ║
