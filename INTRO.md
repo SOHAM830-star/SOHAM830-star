@@ -64,7 +64,6 @@ AUTO-SYNC ENABLED — public repositories are discovered automatically.
 
     Create a public repository and push your first project.
 
-    </div>
 <!-- PROJECTS:END -->
 
 > github_analytics
