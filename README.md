@@ -56,12 +56,53 @@ CURRENT FOCUS
 >_ project_database
 AUTO-SYNC ENABLED
 PUBLIC REPOSITORIES ARE DISCOVERED AUTOMATICALLY.
-<!-- PROJECTS:START --> <div align="center">
-NO PUBLIC BUILDS DETECTED
+<!-- PROJECTS:START -->
+<div align="center">
 
-Create a public repository and push your first project.
+    <img src="https://img.shields.io/badge/AUTO--SYNC-ONLINE-00F7FF?style=for-the-badge&labelColor=0B1020">
 
-</div> <!-- PROJECTS:END -->
+    <br><br>
+
+    <table>
+    <tr>
+
+    <td width="50%" valign="top">
+
+    <a href="https://github.com/SOHAM830-star/skills-getting-started-with-github-copilot">
+    <img src="https://img.shields.io/badge/PROJECT%201-00F7FF?style=for-the-badge&labelColor=0B1020&color=00F7FF">
+    </a>
+
+    <br><br>
+
+    <a href="https://github.com/SOHAM830-star/skills-getting-started-with-github-copilot">
+    <h3>skills-getting-started-with-github-copilot</h3>
+    </a>
+
+    <p>Exercise: Get started using GitHub Copilot</p>
+
+    <p>
+    <img src="https://img.shields.io/badge/JavaScript-111827?style=flat-square&color=F7DF1E">
+    <img src="https://img.shields.io/badge/⭐%200-111827?style=flat-square">
+    <img src="https://img.shields.io/badge/🍴%200-111827?style=flat-square">
+    </p>
+
+    <sub>UPDATED: 15 Aug 2026</sub>
+
+    <br><br>
+
+    </td>
+    
+</tr>
+    </table>
+
+    <br>
+
+    <sub>
+    SHOWING 1 LATEST PUBLIC BUILDS • AUTO-UPDATED EVERY 6 HOURS
+    </sub>
+
+    </div>
+<!-- PROJECTS:END -->
 >_ FEATURED.SYSTEMS
 01 // SMART CAMPUS
 STATUS : ACTIVE DEVELOPMENT
