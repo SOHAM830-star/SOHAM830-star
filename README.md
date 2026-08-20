@@ -32,3 +32,5 @@
 │ CURRENTLY   : Full Stack Development                        │
 │ AI ASSIST   : GitHub Copilot                                │
 └──────────────────────────────────────────────────────────────┘
+
+<p> <img src="https://img.shields.io/badge/C-000000?style=for-the-badge&logo=c&logoColor=00ff00"> <img src="https://img.shields.io/badge/C%2B%2B-000000?style=for-the-badge&logo=cplusplus&logoColor=00ff00"> <img src="https://img.shields.io/badge/Python-000000?style=for-the-badge&logo=python&logoColor=00ff00"> <img src="https://img.shields.io/badge/JavaScript-000000?style=for-the-badge&logo=javascript&logoColor=00ff00"> <img src="https://img.shields.io/badge/SQL-000000?style=for-the-badge&logo=mysql&logoColor=00ff00"> </p>
