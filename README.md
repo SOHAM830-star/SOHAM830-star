@@ -6,7 +6,7 @@
 <table>
 <tr><td colspan="2" align="center"><b>⚡ SYSTEM.IDENTITY ⚡</b></td></tr>
 <tr><td><b>USER</b></td><td>SOHAM.A.CHAVAN</td></tr>
-<tr><td><b>ROLE</b></td><td>Computer Engineering Student</td></tr>
+<tr><td><b>ROLE</b></td><td>Computer Science & Engineering Student</td></tr>
 <tr><td><b>LOCATION</b></td><td>Pune, India</td></tr>
 <tr><td><b>STATUS</b></td><td>🟢 ONLINE</td></tr>
 <tr><td><b>MODE</b></td><td>Learning + Building</td></tr>
