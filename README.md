@@ -6,6 +6,11 @@
 
 <table>
 <tr><td colspan="2" align="center"><b>⚡ SYSTEM.IDENTITY ⚡</b></td></tr>
+  PS C:\Users\Soham> whoami
+> A computer engineering student building full stack systems, one commit at a time.
+> Currently sharpening React, Python, and full stack development skills.
+> Mission: Learn continuously. Build instead of only watching tutorials.
+  
 <tr><td><b>USER</b></td><td>SOHAM.A.CHAVAN</td></tr>
 <tr><td><b>ROLE</b></td><td>Computer Engineering Student</td></tr>
 <tr><td><b>LOCATION</b></td><td>Pune, India</td></tr>
