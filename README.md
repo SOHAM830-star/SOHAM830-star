@@ -3,14 +3,13 @@
 <img src="https://readme-typing-svg.demolab.com?font=Fira+Code&size=20&pause=1000&color=00FF00&center=true&vCenter=true&width=600&lines=Initializing+Soham.exe...;Computer+Engineering+Student;Frontend+%7C+Python+%7C+C%2B%2B+Developer;Building+the+Future%2C+One+Commit+at+a+Time." alt="Typing SVG" />
 
 <br>
-
-<table>
-<tr><td colspan="2" align="center"><b>⚡ SYSTEM.IDENTITY ⚡</b></td></tr>
-  PS C:\Users\Soham> whoami
+PS C:\Users\Soham> whoami
 > A computer engineering student building full stack systems, one commit at a time.
 > Currently sharpening React, Python, and full stack development skills.
 > Mission: Learn continuously. Build instead of only watching tutorials.
-  
+
+<table>
+<tr><td colspan="2" align="center"><b>⚡ SYSTEM.IDENTITY ⚡</b></td></tr>
 <tr><td><b>USER</b></td><td>SOHAM.A.CHAVAN</td></tr>
 <tr><td><b>ROLE</b></td><td>Computer Engineering Student</td></tr>
 <tr><td><b>LOCATION</b></td><td>Pune, India</td></tr>
