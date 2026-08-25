@@ -36,3 +36,6 @@
 <img src="https://komarev.com/ghpvc/?username=SOHAM830-star&label=VIEWS&color=00ff00&style=for-the-badge" alt="Profile Views"/>
 
 </div>
+<br><br>
+
+<img src="https://raw.githubusercontent.com/SOHAM830-star/SOHAM830-star/output/github-contribution-grid-snake.svg" alt="GitHub Contribution Snake"/> </div>
